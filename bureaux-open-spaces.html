@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<!-- SEO -->
+<title>Nettoyage bureaux & open spaces Paris — LouClean</title>
+<meta name="description" content="LouClean assure le nettoyage professionnel de bureaux et open spaces à Paris et Île-de-France. Entretien régulier, intervention matin/soir/week-end. Devis gratuit en 24h.">
+<link rel="canonical" href="https://louclean.fr/bureaux-open-spaces">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Nettoyage bureaux & open spaces Paris — LouClean">
+<meta property="og:description" content="Nettoyage professionnel de bureaux et open spaces à Paris et IDF. Devis gratuit en 24h.">
+<meta property="og:url" content="https://louclean.fr/bureaux-open-spaces">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+
+<!-- Schema JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://louclean.fr/#business",
+      "name": "LouClean",
+      "description": "Entreprise de nettoyage professionnel de bureaux à Paris et Île-de-France.",
+      "url": "https://louclean.fr",
+      "telephone": "+33628132233",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "38 rue du Bois de Boulogne",
+        "addressLocality": "Neuilly-sur-Seine",
+        "postalCode": "92200",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Paris"},
+        {"@type": "City", "name": "Neuilly-sur-Seine"},
+        {"@type": "AdministrativeArea", "name": "Île-de-France"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Nettoyage bureaux et open spaces",
+      "provider": {"@id": "https://louclean.fr/#business"},
+      "areaServed": "Île-de-France",
+      "description": "Entretien courant et nettoyage professionnel de bureaux, open spaces, postes de travail et sanitaires à Paris et IDF."
+    }
+  ]
+}
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --green-dark: #04342C; --green-mid: #0F6E56; --green-bright: #1D9E75;
+    --green-light: #5DCAA5; --green-pale: #E1F5EE; --white: #FFFFFF;
+    --off-white: #F8FAF9; --text: #1A2420; --text-muted: #6B7B76;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--white); -webkit-font-smoothing: antialiased; margin: 0; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 68px;
+    background: rgba(4,52,44,0.97); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-logo { font-family: 'DM Serif Display', serif; font-size: 22px; color: #fff; text-decoration: none; }
+  .nav-logo span { color: var(--green-light); }
+  .nav-links { display: flex; align-items: center; gap: 24px; }
+  .nav-link { font-size: 13px; color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+  .nav-link:hover { color: #fff; }
+  .nav-right { display: flex; align-items: center; gap: 20px; }
+  .nav-phone { font-size: 13px; color: rgba(255,255,255,0.6); text-decoration: none; }
+  .nav-cta { background: var(--green-bright); color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; }
+
+  .hero {
+    min-height: 70vh; background: var(--green-dark);
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; text-align: center;
+    padding: 120px 48px 80px; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(29,158,117,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(29,158,117,0.15); border: 1px solid rgba(93,202,165,0.25);
+    border-radius: 100px; padding: 6px 14px; font-size: 12px;
+    color: var(--green-light); margin-bottom: 28px; font-weight: 500;
+  }
+  .hero h1 { font-family: 'DM Serif Display', serif; font-size: clamp(32px, 4.5vw, 58px); color: #fff; line-height: 1.1; margin-bottom: 20px; max-width: 800px; letter-spacing: -1px; }
+  .hero h1 em { font-style: italic; color: var(--green-light); }
+  .hero p { font-size: 17px; color: rgba(255,255,255,0.65); max-width: 560px; line-height: 1.7; margin-bottom: 40px; }
+  .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { background: #fff; color: var(--green-dark); border: none; padding: 14px 28px; border-radius: 10px; font-size: 15px; font-weight: 600; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+  .trust-bar { background: var(--off-white); border-bottom: 1px solid #E8EDEB; padding: 14px 48px; display: flex; align-items: center; justify-content: center; gap: 36px; flex-wrap: wrap; }
+  .trust-item { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--text-muted); font-weight: 500; }
+  .trust-check { width: 16px; height: 16px; background: var(--green-bright); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .trust-check::after { content: ''; width: 7px; height: 4px; border-left: 1.5px solid white; border-bottom: 1.5px solid white; transform: rotate(-45deg) translateY(-1px); display: block; }
+
+  section { padding: 80px 48px; max-width: 1100px; margin: 0 auto; }
+  section.hero { max-width: none; width: 100%; margin: 0; }
+  .section-label { font-size: 11px; font-weight: 600; color: var(--green-bright); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
+  .section-title { font-family: 'DM Serif Display', serif; font-size: clamp(26px, 3vw, 38px); color: var(--text); line-height: 1.2; letter-spacing: -0.5px; margin-bottom: 16px; }
+  .section-sub { font-size: 16px; color: var(--text-muted); max-width: 620px; line-height: 1.7; margin-bottom: 48px; }
+
+  .prestations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 60px; }
+  .prestation-card { background: var(--off-white); border: 1px solid #E8EDEB; border-radius: 16px; padding: 28px; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+  .prestation-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(4,52,44,0.08); border-color: var(--green-light); }
+  .prestation-icon { font-size: 24px; margin-bottom: 14px; }
+  .prestation-card h3 { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+  .prestation-card p { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+  .horaires { background: var(--green-dark); padding: 60px 48px; text-align: center; }
+  .horaires-inner { max-width: 800px; margin: 0 auto; }
+  .horaires h2 { font-family: 'DM Serif Display', serif; font-size: 32px; color: #fff; margin-bottom: 12px; }
+  .horaires p { font-size: 16px; color: rgba(255,255,255,0.65); margin-bottom: 40px; }
+  .horaires-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .horaire-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 24px; }
+  .horaire-icon { font-size: 24px; margin-bottom: 12px; }
+  .horaire-card h3 { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+  .horaire-card p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.6; }
+
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 40px; }
+  .why-item { display: flex; gap: 12px; align-items: flex-start; }
+  .why-icon { width: 36px; height: 36px; background: var(--green-pale); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 16px; }
+  .why-text h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+  .why-text p { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+  .faq { background: var(--off-white); padding: 80px 48px; }
+  .faq-inner { max-width: 740px; margin: 0 auto; }
+  .faq-item { border-bottom: 1px solid #E8EDEB; padding: 20px 0; }
+  .faq-item h3 { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+  .faq-item p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+  .autres-services { padding: 48px; text-align: center; border-top: 1px solid #E8EDEB; }
+  .autres-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+  .btn-service { background: var(--green-dark); color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-size: 14px; font-weight: 600; font-family: 'DM Sans', sans-serif; }
+
+  .form-section { background: linear-gradient(135deg, #04342C 0%, #0a5240 100%); padding: 80px 48px; }
+  .form-inner { max-width: 680px; margin: 0 auto; }
+  .form-section .section-label { color: var(--green-light); }
+  .form-section .section-title { color: #fff; }
+  .form-section .section-sub { color: rgba(255,255,255,0.6); }
+  .form-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 36px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+  .form-group label { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.6); letter-spacing: 0.04em; text-transform: uppercase; }
+  .form-group input, .form-group select, .form-group textarea { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; padding: 12px 14px; font-size: 14px; color: #fff; font-family: 'DM Sans', sans-serif; outline: none; -webkit-appearance: none; }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green-light); }
+  .form-group select option { background: var(--green-dark); color: #fff; }
+  .form-group textarea { resize: none; height: 90px; }
+  .form-submit { width: 100%; background: var(--green-bright); color: #fff; border: none; padding: 15px; border-radius: 10px; font-size: 15px; font-weight: 600; font-family: 'DM Sans', sans-serif; cursor: pointer; margin-top: 8px; }
+  .form-promise { text-align: center; font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 12px; }
+
+  footer { background: var(--green-dark); padding: 36px 48px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .footer-logo { font-family: 'DM Serif Display', serif; font-size: 20px; color: #fff; }
+  .footer-logo span { color: var(--green-light); }
+  .footer-info { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.8; }
+  .footer-info a { color: rgba(255,255,255,0.6); text-decoration: none; }
+
+  /* HAMBURGER MOBILE NAV */
+  .nav-burger { display: none; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px; margin-left: 8px; }
+  .nav-burger span { display: block; width: 22px; height: 2px; background: rgba(255,255,255,0.85); border-radius: 2px; transition: all 0.3s ease; }
+  .nav-burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-burger.open span:nth-child(2) { opacity: 0; }
+  .nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .nav-mobile { display: none; position: fixed; top: 68px; left: 0; right: 0; background: rgba(4,52,44,0.98); backdrop-filter: blur(12px); padding: 8px 24px 24px; flex-direction: column; z-index: 99; border-bottom: 1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+  .nav-mobile a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 16px; font-weight: 500; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-family: 'DM Sans', sans-serif; display: block; }
+  .nav-mobile a.nav-mobile-cta { color: var(--green-light); border-bottom: none; margin-top: 4px; }
+  .nav-mobile.open { display: flex; }
+  @media(max-width:900px){
+    .nav-links { display: none; }
+    .nav-phone { display: none; }
+    .nav-burger { display: flex; }
+  }
+  @media(max-width:640px){
+    nav { padding: 0 20px; }
+    .hero { padding: 100px 20px 60px; }
+    .hero h1 { font-size: clamp(26px, 7vw, 40px); }
+    .hero p { font-size: 15px; }
+    .hero-btns { flex-direction: column; align-items: center; }
+    .hero-btns a { width: 100%; text-align: center; }
+    section { padding: 48px 20px; }
+    .trust-bar { padding: 12px 20px; gap: 12px; }
+    .trust-item { font-size: 12px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .horaires { padding: 48px 20px; }
+    .horaires-grid { grid-template-columns: 1fr; }
+    .faq { padding: 48px 20px; }
+    .autres-services { padding: 36px 20px; }
+    .autres-grid { grid-template-columns: 1fr; }
+    .form-section { padding: 48px 20px; }
+    .form-row { grid-template-columns: 1fr; }
+    .form-card { padding: 24px 16px; }
+    footer { padding: 28px 20px; flex-direction: column; text-align: center; }
+    #devis-banner { padding: 12px 16px; flex-direction: column; gap: 10px; text-align: center; }
+    #devis-banner p { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Lou<span>Clean</span></a>
+  <div class="nav-links">
+    <a href="/bureaux-open-spaces" class="nav-link">Bureaux</a>
+    <a href="/coworking" class="nav-link">Coworking</a>
+    <a href="/fin-de-chantier" class="nav-link">Fin de chantier</a>
+    <a href="/sols-moquettes" class="nav-link">Sols &amp; moquettes</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:+33628132233" class="nav-phone">+33 6 28 13 22 33</a>
+    <a href="#devis" class="nav-cta">Devis gratuit en 24h</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="/bureaux-open-spaces">Bureaux &amp; open spaces</a>
+  <a href="/coworking">Coworking</a>
+  <a href="/fin-de-chantier">Fin de chantier</a>
+  <a href="/sols-moquettes">Sols &amp; moquettes</a>
+  <a href="tel:+33628132233" class="nav-mobile-cta">📞 06 28 13 22 33</a>
+</div>
+<script>(function(){var b=document.getElementById('navBurger'),m=document.getElementById('navMobile');if(b&&m){b.addEventListener('click',function(){b.classList.toggle('open');m.classList.toggle('open');});}})()</script>
+
+<section class="hero">
+  <div class="hero-badge">Paris &amp; Île-de-France — depuis 2017</div>
+  <h1>Nettoyage de <em>bureaux</em><br>&amp; open spaces à Paris</h1>
+  <p>Des locaux impeccables chaque matin, sans contrainte. LouClean s'adapte à vos horaires et à la taille de votre équipe.</p>
+  <div class="hero-btns">
+    <a href="#devis" class="btn-primary">Demander un devis gratuit →</a>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item"><div class="trust-check"></div>+7 ans d'expérience</div>
+  <div class="trust-item"><div class="trust-check"></div>100+ clients satisfaits</div>
+  <div class="trust-item"><div class="trust-check"></div>Intervention sous 48h</div>
+  <div class="trust-item"><div class="trust-check"></div>Produits éco-responsables</div>
+  <div class="trust-item"><div class="trust-check"></div>Devis gratuit en 24h</div>
+</div>
+
+<section>
+  <div class="section-label">Nos prestations</div>
+  <div class="section-title">Un entretien complet,<br>de A à Z</div>
+  <div class="section-sub">Chaque espace de votre bureau reçoit une attention particulière. Nos équipes interviennent avec méthode et discrétion.</div>
+  <div class="prestations-grid">
+    <div class="prestation-card">
+      <div class="prestation-icon">🖥️</div>
+      <h3>Postes de travail</h3>
+      <p>Dépoussiérage des bureaux, écrans, claviers, téléphones. Surfaces désinfectées à chaque passage.</p>
+    </div>
+    <div class="prestation-card">
+      <div class="prestation-icon">🪟</div>
+      <h3>Vitres & cloisons</h3>
+      <p>Nettoyage des cloisons vitrées, portes, fenêtres intérieures. Espace lumineux et professionnel.</p>
+    </div>
+    <div class="prestation-card">
+      <div class="prestation-icon">🚻</div>
+      <h3>Sanitaires</h3>
+      <p>Désinfection complète, réassort savon et papier. Sanitaires toujours propres pour vos équipes.</p>
+    </div>
+    <div class="prestation-card">
+      <div class="prestation-icon">☕</div>
+      <h3>Cuisine & espaces communs</h3>
+      <p>Plans de travail, appareils, réfrigérateur, zones de pause. Tout est nettoyé et rangé.</p>
+    </div>
+    <div class="prestation-card">
+      <div class="prestation-icon">🧹</div>
+      <h3>Sols & moquettes</h3>
+      <p>Aspiration, lavage carrelage et parquet, entretien moquettes. Sols impeccables à chaque passage.</p>
+    </div>
+    <div class="prestation-card">
+      <div class="prestation-icon">🗑️</div>
+      <h3>Poubelles & recyclage</h3>
+      <p>Vidage et remplacement des sacs poubelles, tri sélectif respecté.</p>
+    </div>
+  </div>
+
+  <div class="section-label">Pourquoi LouClean</div>
+  <div class="section-title">Ce qui nous distingue</div>
+  <div class="why-grid">
+    <div class="why-item">
+      <div class="why-icon">⚡</div>
+      <div class="why-text"><h4>Réactivité</h4><p>Devis sous 24h, première intervention sous 48h.</p></div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🔒</div>
+      <div class="why-text"><h4>Discrétion</h4><p>Intervention hors heures de bureau si souhaité. Équipe formée à la confidentialité.</p></div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">🌿</div>
+      <div class="why-text"><h4>Éco-responsable</h4><p>Produits certifiés, dosage précis, matériel réutilisable.</p></div>
+    </div>
+    <div class="why-item">
+      <div class="why-icon">📋</div>
+      <div class="why-text"><h4>Suivi qualité</h4><p>Compte-rendu après chaque intervention. Référent dédié à votre compte.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="horaires">
+  <div class="horaires-inner">
+    <div class="section-label" style="color:var(--green-light)">Flexibilité</div>
+    <h2>On s'adapte à vos horaires</h2>
+    <p>Avant l'arrivée de vos équipes, pendant la pause déjeuner ou après la fermeture — c'est vous qui choisissez.</p>
+    <div class="horaires-grid">
+      <div class="horaire-card">
+        <div class="horaire-icon">🌅</div>
+        <h3>Intervention matinale</h3>
+        <p>Dès 6h, avant l'arrivée de vos collaborateurs. Bureau impeccable à la prise de poste.</p>
+      </div>
+      <div class="horaire-card">
+        <div class="horaire-icon">🌙</div>
+        <h3>Intervention en soirée</h3>
+        <p>Après 19h, une fois les bureaux vidés. Aucune perturbation de votre activité.</p>
+      </div>
+      <div class="horaire-card">
+        <div class="horaire-icon">📅</div>
+        <h3>Week-end</h3>
+        <p>Samedi et dimanche disponibles pour les interventions ponctuelles ou régulières.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="faq-inner">
+    <div class="section-label">FAQ</div>
+    <div class="section-title">Questions fréquentes</div>
+    <div class="faq-item">
+      <h3>Quelle fréquence d'intervention recommandez-vous ?</h3>
+      <p>Pour un bureau de 10 à 30 personnes, nous recommandons 2 à 3 passages par semaine. Pour les open spaces de plus de 50 postes, une intervention quotidienne est idéale. Nous établissons ensemble la fréquence adaptée lors du devis.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Intervenez-vous dans tout Paris ?</h3>
+      <p>Oui, LouClean intervient dans tous les arrondissements de Paris ainsi qu'en petite couronne : Neuilly-sur-Seine, Levallois-Perret, Boulogne-Billancourt, Issy-les-Moulineaux, Saint-Denis, Montreuil et plus encore.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Faut-il fournir le matériel de nettoyage ?</h3>
+      <p>Non, LouClean apporte tout le matériel et les produits nécessaires, certifiés éco-responsables. Vous n'avez absolument rien à prévoir.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Peut-on modifier la fréquence ou les horaires en cours de contrat ?</h3>
+      <p>Oui, nos contrats sont flexibles. Vous pouvez ajuster la fréquence, les horaires ou la liste des tâches à tout moment en contactant votre référent LouClean.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Y a-t-il un engagement de durée minimum ?</h3>
+      <p>Non, pas d'engagement long terme. Nous fonctionnons sur des contrats mensuels résiliables avec un préavis raisonnable.</p>
+    </div>
+  </div>
+</div>
+
+<div class="autres-services">
+  <div class="section-label">Nos autres services</div>
+  <div class="section-title" style="font-family:'DM Serif Display',serif;font-size:28px;color:var(--text);margin-bottom:8px;">Vous pourriez aussi avoir besoin de...</div>
+  <div class="autres-btns">
+    <a href="/coworking" class="btn-service">Ménage hebdomadaire coworking →</a>
+    <a href="/fin-de-chantier" class="btn-service">Nettoyage fin de chantier →</a>
+  </div>
+</div>
+
+<div class="form-section" id="devis">
+  <div class="form-inner">
+    <div class="section-label">Devis gratuit</div>
+    <div class="section-title">Recevez votre devis en 24h</div>
+    <div class="section-sub">Décrivez vos bureaux, nous vous proposons un programme sur-mesure. Aucun engagement.</div>
+    <form class="form-card" action="https://formspree.io/f/mreydlnj" method="POST">
+      <div class="form-row">
+        <div class="form-group"><label>Prénom *</label><input type="text" name="prenom" placeholder="Jean" required/></div>
+        <div class="form-group"><label>Nom *</label><input type="text" name="nom" placeholder="Dupont" required/></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Société *</label><input type="text" name="societe" placeholder="Mon entreprise" required/></div>
+        <div class="form-group"><label>Téléphone *</label><input type="tel" name="telephone" placeholder="+33 6 ..." required/></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nombre de postes *</label>
+          <select name="postes" required>
+            <option value="">Sélectionner...</option>
+            <option>Moins de 10 postes</option>
+            <option>10 – 30 postes</option>
+            <option>30 – 60 postes</option>
+            <option>Plus de 60 postes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Fréquence souhaitée *</label>
+          <select name="frequence" required>
+            <option value="">Sélectionner...</option>
+            <option>1 fois par semaine</option>
+            <option>2 à 3 fois par semaine</option>
+            <option>Tous les jours</option>
+            <option>Ponctuel</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Message (optionnel)</label>
+        <textarea name="message" placeholder="Horaires préférés, contraintes d'accès, besoins spécifiques..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Devis bureaux & open spaces — LouClean"/>
+      <input type="hidden" name="_next" value="https://louclean.fr"/>
+      <button type="submit" class="form-submit">Envoyer ma demande de devis →</button>
+      <div class="form-promise">Réponse garantie sous 24h &nbsp;•&nbsp; Aucun engagement &nbsp;•&nbsp; 100% gratuit</div>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Lou<span>Clean</span></div>
+  <div class="footer-info">
+    38 rue du Bois de Boulogne, 92200 Neuilly-sur-Seine<br>
+    <a href="tel:+33628132233">+33 6 28 13 22 33</a> &nbsp;•&nbsp; <a href="/">Accueil</a><br>
+    <a href="/mentions-legales">Mentions légales</a> &nbsp;•&nbsp; <a href="/politique-confidentialite">Politique de confidentialité</a>
+  </div>
+</footer>
+
+
+<!-- BANDEAU DEVIS — apparaît après 60 secondes, une seule fois par session -->
+<div id="devis-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:998;background:#04342C;border-top:2px solid #1D9E75;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;transform:translateY(110%);transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 -6px 32px rgba(0,0,0,0.3);">
+  <div style="display:flex;align-items:center;gap:12px;flex:1;min-width:220px;">
+    <div style="width:8px;height:8px;background:#5DCAA5;border-radius:50%;flex-shrink:0;animation:pulse 2s infinite;"></div>
+    <p style="margin:0;color:#fff;font-family:'DM Sans',sans-serif;font-size:15px;">Vous cherchez un prestataire de nettoyage ? <strong>Devis gratuit, réponse en 24h.</strong></p>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <a href="#devis" id="banner-cta" style="background:#1D9E75;color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:600;font-family:'DM Sans',sans-serif;white-space:nowrap;">Demander un devis →</a>
+    <button id="banner-close" aria-label="Fermer" style="background:none;border:none;color:rgba(255,255,255,0.5);cursor:pointer;font-size:28px;line-height:1;padding:0 4px;font-family:sans-serif;">&times;</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(sessionStorage.getItem('lc_banner')) return;
+  var b = document.getElementById('devis-banner');
+  setTimeout(function(){
+    b.style.transform = 'translateY(0)';
+    sessionStorage.setItem('lc_banner','1');
+  }, 30000);
+  document.getElementById('banner-close').onclick = function(){ b.style.transform = 'translateY(110%)'; };
+  document.getElementById('banner-cta').onclick = function(){ b.style.transform = 'translateY(110%)'; };
+})();
+</script>
+
+</body>
+</html>
