@@ -211,6 +211,8 @@
     #devis-banner { padding: 12px 16px; flex-direction: column; gap: 10px; text-align: center; }
     #devis-banner p { font-size: 13px; }
   }
+  .btn-service-inline { display:inline-block; background: linear-gradient(135deg, #04342C 0%, #0F6E56 50%, #04342C 100%); background-size: 200% auto; color:#fff; text-decoration:none; padding:14px 28px; border-radius:10px; font-size:15px; font-weight:600; font-family:'DM Sans',sans-serif; transition: background-position 0.4s ease, transform 0.2s, box-shadow 0.2s; }
+  .btn-service-inline:hover { background-position: right center; transform: translateY(-3px); box-shadow: 0 8px 24px rgba(4,52,44,0.35); }
   .nav-cta { background: linear-gradient(135deg, var(--green-bright) 0%, var(--green-light) 50%, var(--green-bright) 100%) !important; background-size: 200% auto !important; transition: background-position 0.4s ease, transform 0.15s, box-shadow 0.2s !important; }
   .nav-cta:hover { background-position: right center !important; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(29,158,117,0.4); }
   .form-submit { background: linear-gradient(135deg, var(--green-bright) 0%, var(--green-light) 50%, var(--green-bright) 100%) !important; background-size: 200% auto !important; transition: background-position 0.4s ease, transform 0.15s, box-shadow 0.2s !important; }
@@ -326,7 +328,7 @@
 <div style="background:#F8FAF9;padding:48px;text-align:center;border-top:1px solid #E8EDEB;">
   <p style="font-size:12px;font-weight:600;color:#1D9E75;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Nos autres services</p>
   <h2 style="font-family:'DM Serif Display',serif;font-size:28px;color:#1A2420;margin-bottom:24px;">Vous pourriez aussi avoir besoin de...</h2>
-  <a href="/coworking" style="display:inline-block;background:#04342C;color:#fff;text-decoration:none;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;font-family:'DM Sans',sans-serif;">
+  <a href="/coworking" class="btn-service-inline">
     Ménage hebdomadaire coworking & bureaux opérés →
   </a>
 </div>
