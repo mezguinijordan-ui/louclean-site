@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>Demande envoyée — LouClean</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://louclean.fr/merci">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-dark: #04342C;
+    --green-mid: #0A5C4E;
+    --green-light: #1D9E75;
+    --green-pale: #E8F5F0;
+    --off-white: #F7FAF9;
+    --text-dark: #0D1F1A;
+    --text-mid: #3A5A52;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--off-white); color: var(--text-dark); min-height: 100vh; display: flex; flex-direction: column; }
+
+  /* NAV */
+  nav { background: var(--green-dark); padding: 0 48px; height: 64px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+  .nav-logo { font-family: 'DM Serif Display', serif; font-size: 22px; color: #fff; text-decoration: none; }
+  .nav-logo span { color: var(--green-light); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: #fff; }
+  .nav-cta { background: var(--green-light); color: #fff !important; padding: 8px 20px; border-radius: 8px; }
+
+  /* MAIN */
+  main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 24px; }
+  .merci-card {
+    background: #fff;
+    border: 1px solid #E8EDEB;
+    border-radius: 24px;
+    padding: 64px 56px;
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(4,52,44,0.08);
+  }
+  .merci-icon {
+    width: 72px;
+    height: 72px;
+    background: var(--green-pale);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 28px;
+  }
+  .merci-icon svg { width: 36px; height: 36px; }
+  .merci-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    color: var(--green-dark);
+    margin-bottom: 16px;
+  }
+  .merci-text {
+    font-size: 16px;
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .merci-text strong { color: var(--green-dark); }
+  .merci-btn {
+    display: inline-block;
+    background: var(--green-light);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s;
+  }
+  .merci-btn:hover { background: var(--green-mid); }
+  .merci-contact {
+    margin-top: 28px;
+    font-size: 13px;
+    color: var(--text-mid);
+  }
+  .merci-contact a { color: var(--green-light); text-decoration: none; }
+
+  /* FOOTER */
+  footer { background: var(--green-dark); padding: 28px 48px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .footer-logo { font-family: 'DM Serif Display', serif; font-size: 20px; color: #fff; }
+  .footer-logo span { color: var(--green-light); }
+  .footer-info { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.8; }
+  .footer-info a { color: rgba(255,255,255,0.6); text-decoration: none; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .merci-card { padding: 40px 24px; }
+    .merci-title { font-size: 26px; }
+    footer { padding: 28px 20px; flex-direction: column; text-align: center; }
+  }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  .merci-card { animation: fadeUp 0.5s ease both; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Lou<span>Clean</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/nettoyage-bureaux-paris">Paris</a></li>
+    <li><a href="/bureaux-open-spaces">Services</a></li>
+    <li><a href="/choisir-entreprise-nettoyage-bureaux-paris">Blog</a></li>
+    <li><a href="/#devis" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="merci-card">
+    <div class="merci-icon">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="18" fill="#1D9E75" opacity="0.15"/>
+        <path d="M10 18.5L15.5 24L26 13" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1 class="merci-title">Votre demande a bien été envoyée !</h1>
+    <p class="merci-text">
+      Merci pour votre confiance. Nous avons bien reçu votre demande de devis et nous vous recontacterons dans les <strong>24 heures</strong> ouvrées.
+    </p>
+    <a href="/" class="merci-btn">Retourner sur le site</a>
+    <p class="merci-contact">
+      Une question urgente ? Appelez-nous au <a href="tel:+33628132233">06 28 13 22 33</a>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-logo">Lou<span>Clean</span></div>
+  <div class="footer-info">
+    38 rue du Bois de Boulogne, 92200 Neuilly-sur-Seine<br>
+    <a href="tel:+33628132233">+33 6 28 13 22 33</a> &nbsp;•&nbsp; <a href="mailto:lou@louclean.fr">lou@louclean.fr</a><br>
+    <a href="/mentions-legales">Mentions légales</a> &nbsp;•&nbsp; <a href="/politique-confidentialite">Politique de confidentialité</a>
+  </div>
+</footer>
+
+</body>
+</html>
