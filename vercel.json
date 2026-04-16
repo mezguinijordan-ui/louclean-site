@@ -3,13 +3,16 @@
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/index",
-      "destination": "/",
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "louclean.fr" }
+      ],
+      "destination": "https://www.louclean.fr/:path*",
       "permanent": true
     },
     {
-      "source": "/choisir-entreprise-nettoyage-bureaux-paris",
-      "destination": "/blog",
+      "source": "/index",
+      "destination": "/",
       "permanent": true
     }
   ]
